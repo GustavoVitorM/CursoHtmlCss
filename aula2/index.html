@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css com a tag style-->
+    <style>
+        /* h1 é a tag que será estilizada
+        {} -> personalização da tag */
+        h1 {
+            background-color: red;
+        }
+
+        p {
+            background: blue;
+            color: white;
+        }
+        /* #id -> altera o estilo da tag com id digitado.
+            nesse caso "cabeçalho-1" */
+        #cabeçalho-1 {
+            background: green;
+        }
+        /* .classe -> altera todas as tags com atributo classe digitado,
+            nesse caso "fundo-marrom" */
+        .fundo-marrom {
+            background: brown;
+        }
+
+        /* O fundo marrom não é aplicado ao primeiro h1, 
+        pois o estilo dado através do id é mais importante*/
+        
+    </style>
+
+</head>
+<body>
+    <!-- Regras para tags -->
+    <!--h1 -> nome da tag, 
+        id e class -> atributos, 
+        "" -> valores-->
+    <h1 id="cabeçalho-1" class="fundo-marrom borda-esquerda">
+        Cabeçalho
+    </h1>
+    <!-- id -> possuem um valor único da tag
+         class -> podem compartilhar e ter mais de um valor-->
+    <h1 id="cabeçalho-2" class="fundo-marrom">
+        Cabeçalho
+    </h1>
+    <p>Texto exemplo</p>
+</body>
+</html>
